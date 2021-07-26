@@ -1,18 +1,16 @@
 // https://forkify-api.herokuapp.com/v2
 import * as model from './model.js';
+import { MODAL_CLOSE_SEC } from './config.js';
 import recipeView from './views/recipeView.js';
 import searchView from './views/searchView.js';
 import resultsView from './views/resultsView.js';
-import { MODAL_CLOSE_SEC } from './config.js';
-
-import icons from 'url:../img/icons.svg';
-import 'core-js/stable';
-import 'regenerator-runtime/runtime';
 import paginationView from './views/paginationView.js';
 import bookmarksView from './views/bookmarksView.js';
 import addRecipeView from './views/AddRecipeView.js';
 
-const { async } = require('regenerator-runtime');
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
+import { async } from 'regenerator-runtime';
 
 if (module.hot) {
   module.hot.accept;
